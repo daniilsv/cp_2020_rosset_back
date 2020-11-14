@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/sequelize';
 import { TestAnswerModel } from 'src/models/test-answer.model';
 import { TestModel } from 'src/models/test.model';
 import { UserModel } from 'src/models/user.model';
-import { StartAttemptDto } from 'src/quest/dto/start-attempt.dto';
+import { AnswerTestDto } from './dto/answer.dto';
 
 @Injectable()
 export class TestService {
@@ -18,7 +18,7 @@ export class TestService {
     return `This action returns a quest`;
   }
 
-  answer(user: UserModel, startAttemptDto: StartAttemptDto) {
-    throw new Error('Method not implemented.');
+  answer(user: UserModel, startAttemptDto: AnswerTestDto) {
+    return `This action returns a quest`;
   }
 }

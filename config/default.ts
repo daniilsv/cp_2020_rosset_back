@@ -9,7 +9,7 @@ export default () => ({
     username: 'tod',
     password: 'tod',
     database: 'tod',
-    synchronize: true,
+    synchronize: false,
     logging: console.log,
   },
   jwt: {

@@ -15,13 +15,13 @@ export class QuestService {
   ) { }
 
   findOne() {
-    return `This action returns a quest`;
+    return this.questModel.findOne();
   }
 
   startAttempt(user: UserModel, startAttemptDto: StartAttemptDto) {
-    throw new Error('Method not implemented.');
+    return `This action returns a quest`;
   }
   finishAttempt(finishAttemptDto: FinishAttemptDto) {
-    throw new Error('Method not implemented.');
+    return `This action returns a quest`;
   }
 }
